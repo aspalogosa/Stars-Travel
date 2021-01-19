@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach-hotels</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./styles/jquery.bxslider.css">
+    <link rel="stylesheet" href="./styles/bx/jquery.bxslider.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="https://kit.fontawesome.com/e83978d43a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-box">
+            <div class="container">
+                <div class="row">
+                    <div class="d-none d-lg-flex col-lg-4  align-items-center">
+                        <div class="row">
+                            <div class="col">
+                                <div class="dropdown text-left">
+                                    <button class="btn text-white shadow-none px-0 py-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display:flex">
+                                  bg<span style="background-image: url('../resources/images/common/language-icon.png');"></span>
+                                 
+                                </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">English</a>
+                                        <a class="dropdown-item" href="#">Български</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 d-flex justify-content-center logo-box">
+                        <a href="../index.html" class="logo"></a>
+                    </div>
+                    <div class="col-12 col-lg-3 col-xl-4 my-auto contact-info pl-0">
+                        <div class="row pr-3">
+                            <div class="col-5 col-md-5 col-lg-4 col-xl-6 d-flex justify-content-end">
+                                <div style="background-image:url('http://localhost/Stars-Travel/resources/images/common/mail.svg')"></div>
+                            </div>
+                            <div class="col-5 col-md-7 col-lg-8 col-xl-6"><span>office@starstravel.info</span></div>
+                        </div>
+                        <div class="row pr-3">
+                            <div class="col-5 col-md-5 col-lg-4 col-xl-6 d-flex justify-content-end pl-0">
+                                <div style="background-image:url('http://localhost/Stars-Travel/resources/images/common/phone.svg')"></div>
+                            </div>
+                            <div class="col-5 col-md-7 col-lg-8 col-xl-6 pr-0"><span>(+359) 888 425 784</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light container justify-content-end">
+            <div class="d-flex d-lg-none mr-auto language-dropdown">
+
+                <div class="dropdown text-left">
+                    <button class="btn text-white shadow-none px-0 py-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display:flex">
+                          bg<span style="background-image: url('../resources/images/common/language-icon.png');background-repeat:no-repeat;background-position:center center;width:19px;height:19px;display:inline-block;margin-left:15px!important;border:1px solid grey;border-radius:25px;border: radius weight bold!important; ;"></span>
+                         
+                        </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">Български</a>
+                    </div>
+                </div>
+
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                HOTELS<i class="fas fa-angle-down"></i>
+                           </a>
+                        <div class="dropdown-menu rounded-0">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 border-right py-2">
+                                        <a href="#">City Break Hotel</a>
+                                    </div>
+                                    <div class="col-12 col-lg-6 border-right py-2">
+                                        <a href="#">Beach Hotels</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 border-right py-2">
+                                        <a href="#">Mountain Hotels</a>
+                                    </div>
+                                    <div class="col-12 col-lg-6 border-right py-2">
+                                        <a href="#">Wild Hotels</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 border-right py-2">
+                                        <a href="#">Luxury Villas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          DREAM DESTINATIONS<i class="fas fa-angle-down"></i>
+                           </a>
+                        <div class="dropdown-menu rounded-0">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 border-right py-2">
+                                        <a href="#">City Break Hotel</a>
+                                    </div>
+                                    <div class="col-12 col-lg-6 border-right py-2">
+                                        <a href="#">Beach Hotels</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 border-right py-2">
+                                        <a href="#">Mountain Hotels</a>
+                                    </div>
+                                    <div class="col-12 col-lg-6 border-right py-2">
+                                        <a href="#">Wild Hotels</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 border-right py-2">
+                                        <a href="#">Luxury Villas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                TOURISM IN BULGARIA<i class="fas fa-angle-down"></i>
+                                  </a>
+                            <div class="dropdown-menu rounded-0">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 border-right py-2">
+                                            <a href="#">City Break Hotel</a>
+                                        </div>
+                                        <div class="col-12 col-lg-6 border-right py-2">
+                                            <a href="#">Beach Hotels</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 border-right py-2">
+                                            <a href="#">Mountain Hotels</a>
+                                        </div>
+                                        <div class="col-12 col-lg-6 border-right py-2">
+                                            <a href="#">Wild Hotels</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 border-right py-2">
+                                            <a href="#">Luxury Villas</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">GIFT CARD</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">STARS BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACTS</a>
+                            </li>
+                            <li class="nav-item mobile-display">
+                                <a class="nav-link" href="#">ABOUT US</a>
+                            </li>
+                            <li class="nav-item mobile-display">
+                                <a class="nav-link" href="#">TRAVEL INSURANCE</a>
+                            </li>
+                            <li class="nav-item mobile-display">
+                                <a class="nav-link" href="#">QUALITY ASSURANCE</a>
+                            </li>
+                            <li class="nav-item mobile-display">
+                                <a class="nav-link" href="#">TERMS AND CONDITIONS</a>
+                            </li>
+                            <li class="nav-item mobile-display">
+                                <a class="nav-link" href="#">PRIVACY</a>
+                            </li>
+                            <li class="nav-item mobile-display">
+                                <a class="nav-link" href="#">COOKIES POLICY</a>
+                            </li>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section class="info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Hotels</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Beach Hotels</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="filter-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2>BEACH HOTELS</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <span>
+                                Welcome on the sandy white  beaches.
+                                <br>
+                                How could anyone resist a locale with a moniker as charming as the Seychelles? Off the coast of Africa, and surrounded by the 
+                                deep waters of the Indian Ocean, Constance Lemuria Seychelles makes a secluded, relaxing destination for both man, woman, and sea turtle. 
+                                <br>
+                                So much so for the turtles, that they choose to lay their eggs here. If guests are careful and respectful, they can watch the entire delicate process unfold. 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-2">
+                            <div class="destinations">
+                                <strong>Destinations</strong>
+                                <form action="/action_page.php" method="get">
+                                    <input type="checkbox" name="maldives" value="#">
+                                    <label for="place1"> MALDIVES</label><br>
+                                    <input type="checkbox" name="bora-bora" value="#">
+                                    <label for="place2"> BORA BORA</label><br>
+                                    <input type="checkbox" name="hayman-island" value="#">
+                                    <label for="place3"> HAYMAH ISLAND</label><br>
+                                    <input type="checkbox" name="hawaii" value="#">
+                                    <label for="place4"> HAWAII</label><br>
+                                    <input type="checkbox" name="barbados" value="#">
+                                    <label for="place5"> BARBADOS</label><br>
+                                    <input type="checkbox" name="the-bahamas" value="#">
+                                    <label for="place6"> TEH BAHAMAS</label><br>
+                                    <input type="checkbox" name="phuket-island" value="#">
+                                    <label for="place7"> PHUKET ISLAND</label><br>
+                                    <input type="checkbox" name="palawan" value="#">
+                                    <label for="place8"> PALAWAN</label><br>
+                                    <input type="checkbox" name="seychelles" value="#">
+                                    <label for="place9"> SEYCHELLES</label><br>
+                                    <input type="checkbox" name="santorini" value="#">
+                                    <label for="place10">SANTORINI</label><br>
+
+                                    <input type="checkbox" name="ko phi phi" value="#">
+                                    <label for="place11">KO PHI PHI</label><br>
+
+                                    <input type="checkbox" name="bali" value="#">
+                                    <label for="place12">BALI</label><br>
+
+                                    <input type="checkbox" name="fiji" value="#">
+                                    <label for="place13">FIJI</label><br>
+
+                                    <input type="checkbox" name="kauai" value="#">
+                                    <label for="place14">KAUA'I</label><br>
+
+                                    <input type="checkbox" name="st.barts" value="#">
+                                    <label for="place15">ST. BARTS</label><br>
+
+                                    <input type="checkbox" name="st-luchia" value="#">
+                                    <label for="place15">ST. LUCIA</label><br>
+
+
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-10 items">
+                            <div class="row py-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="item-bg" style="background-image:url('../resources/images/hotels/hotel-room.jpg')"></div>
+                                    <span>InterContinental Hayman Island Resort </span>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="item-bg" style="background-image:url('../resources/images/hotels/heaven.jpg')"></div>
+                                    <span>InterContinental Hayman Island Resort </span>
+                                </div>
+                            </div>
+                            <div class="row py-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="item-bg" style="background-image:url('../resources/images/hotels/sky.jpg')"></div>
+                                    <span>InterContinental Hayman Island Resort </span>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="item-bg" style="background-image:url('../resources/images/hotels/garden.jpg')"></div>
+                                    <span>InterContinental Hayman Island Resort </span>
+                                </div>
+                            </div>
+                            <div class="row py-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="item-bg" style="background-image:url('../resources/images/hotels/bedroom.jpg')"></div>
+                                    <span>InterContinental Hayman Island Resort </span>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="item-bg" style="background-image:url('../resources/images/hotels/bedroom-second.jpg')"></div>
+                                    <span>InterContinental Hayman Island Resort </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blog-archive">
+                <div class="archive-pages position">
+                    <div class="container d-flex justify-content-end">
+                        <div class="row">
+                            <div class="col pr-0">
+                                <nav>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li> <a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section>
+                <div class="container-fluid contact-heading">
+                    <div class="row">
+                        <div class="col">
+                            <div class="contact-us text-center">
+                                <span>CONTACT US</span>
+                                <div style="background-image:url('../resources/images/common/phone-contact.svg');background-repeat:no-repeat;background-position:center center;width:46px;height:46px;display:inline-block"></div>
+                                <span>+359 888 425 784</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+    </main>
+
+
+    <footer class="footer-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3 col-lg-2 footer-links">
+                    <ul>
+                        <li>
+                            <a href="#">HOTELS</a></li>
+                        <li>
+                            <a href="#">DREAM DESTINATIONS</a></li>
+                        <li>
+                            <a href="#">TOURISM IN BULGARIA</a></li>
+                        <li>
+                            <a href="#">BLOG</a></li>
+                        <li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 footer-links">
+                    <ul>
+
+                        <li><a href="#">ABOUT US</a></li>
+                        <li>
+                            <a href="#">CONTACT US</a></li>
+                        <li>
+                            <a href="#">GIFT CARD</a></li>
+                        <li>
+                            <a href="#">TRAVEL INSURANCE</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 footer-links">
+                    <ul>
+
+                        <li>
+                            <a href="#">QUALITY ASSURANCE</a></li>
+                        <li>
+                            <a href="#">TERMS AND CONDITIONS</a></li>
+                        <li>
+                            <a href="#">PRIVACY</a></li>
+                        <li>
+                            <a href="#">COOKIES POLICY</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12 col-lg-4 other-logos">
+                    <div class="row">
+                        <div class="col d-flex">
+                            <a href="#">
+                                <img class="img-fluid" src="../resources/images/privacy/ukas.png">
+                            </a>
+                        </div>
+                        <div class="col d-flex">
+                            <a href="#">
+                                <img class="img-fluid" src="../resources/images/privacy/iata.png">
+                            </a>
+                        </div>
+                        <div class="col d-flex">
+                            <a href="#">
+                                <img class="img-fluid" src="../resources/images/privacy/xo.png">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <span class="col-12 col-lg-6 align-self-center order-2 order-lg-1" style="color:white">2020 © STARS TRAVEL FEEL SPECIAL. All Rights Reserved.</span>
+                <div class="col-12 col-lg-6 socials order-1 order-lg-2">
+                    <ul>
+                        <li>
+                            <a href="#" style="background-image:url('../resources/images/common/facebook.svg')"></a>
+                        </li>
+                        <li>
+                            <a href="#" style="background-image:url('../resources/images/common/instagram.svg')"></a>
+                        </li>
+                        <li>
+                            <a href="#" style="background-image:url('../resources/images/common/youtube.svg')"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="../js/main.js" defer></script>
+</body>
+
+</html>
